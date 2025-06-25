@@ -1,0 +1,96 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #06244b 0%, #3f8fc4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Glassmorphism card */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Form & input styling */
+form label {
+  font-size: 16px;
+  color: #eee;
+  display: block;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  outline: none;
+}
+
+input[type="date"]::placeholder {
+  color: #ddd;
+}
+
+/* Button styling */
+button {
+  background: linear-gradient(135deg, #ec7e7e, #e52e71);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+/* Result section */
+#result {
+  margin-top: 30px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  line-height: 1.6;
+  backdrop-filter: blur(6px);
+}
